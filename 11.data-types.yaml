@@ -8,11 +8,11 @@
     - shell script
     - terraform
     Experience:  #map or dictionaries
-    Devops: 3 yr #number
-    Docker: 2 yr
-    linux: 1 yr
+      Devops: 3  #number
+      Docker: 2 
+      linux: 1 
     Real_project: true #boolien
   tasks:
   - name: print variables
     ansible.builtin.debug:
-      msg: "Hi im learning {{course}}, tools covered {{Tools}} experience is {{Experience}} is real time project{{Real_project}}"
+      msg: "Hi im learning {{course}}, tools covered {{Tools}} experience is {{Experience}}  real time project{{Real_project}}"
