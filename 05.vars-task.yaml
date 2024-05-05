@@ -6,7 +6,8 @@
     duration: 100
   tasks:
   - name: print override information
-    course: Terraform
+    vars: # task level variables
+      course: Terraform
     ansible.builtin.debug:
       msg: "Hi im {{student}} learning {{course}} duration {{duration}}"
     
