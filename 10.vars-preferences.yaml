@@ -10,11 +10,12 @@
     private: false
   tasks:
   - name: print information
-    vars:
-    - WISHES: "Good morining from task level"
+   # vars:
+    #- WISHES: "Good morining from task level"
     ansible.builtin.debug:
       msg: "Hi {{WISHES}}"
 
 
       #1.arguments are passed
-      #2.
+      #2.Task leve
+      #
