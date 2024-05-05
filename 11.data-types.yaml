@@ -2,16 +2,16 @@
   hosts: localhost
   vars:
     course: Devops with aws #string
-  Tools: # list
-  - Ansible
-  - linux
-  - shell script
-  - terraform
-  Experience:  #map or dictionaries
+    Tools: # list
+    - Ansible
+    - linux
+    - shell script
+    - terraform
+    Experience:  #map or dictionaries
     Devops: 3 yr #number
     Docker: 2 yr
     linux: 1 yr
-  Real_project: true #boolien
+    Real_project: true #boolien
   tasks:
   - name: print variables
     ansible.builtin.debug:
