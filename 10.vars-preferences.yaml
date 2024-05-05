@@ -2,8 +2,8 @@
   hosts: localhost
   vars:
   - WISHES: "Good morning from play level variables"
-  vars_files:
-  - vars.yaml
+  #vars_files:
+  #- vars.yaml
   vars_prompt:
   - name: WISHES
     prompt: please enter wishes
@@ -18,4 +18,5 @@
 
       #1.arguments are passed
       #2.Task leve
-      #
+      #3.variable file
+      #4.
