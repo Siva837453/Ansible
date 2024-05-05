@@ -13,4 +13,4 @@
     vars:
     - WISHES: "Good morining from task level"
     ansible.builtin.debug:
-      msg: "Hi {{PERSON}} {{WISHES}}"
+      msg: "Hi {{WISHES}}"
