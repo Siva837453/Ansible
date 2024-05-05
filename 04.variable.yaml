@@ -1,6 +1,6 @@
 - name: Variable
   hosts: localhost
-  vars:
+  vars:  #variable declaration
     course: DevOps
     student: Sivakumar
     Duration: 120
