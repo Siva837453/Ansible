@@ -14,3 +14,7 @@
     - WISHES: "Good morining from task level"
     ansible.builtin.debug:
       msg: "Hi {{WISHES}}"
+
+
+      #1.arguments are passed
+      #2.
