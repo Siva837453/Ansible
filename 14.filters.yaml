@@ -3,7 +3,7 @@
   tasks:
   - name: print default value
     ansible.builtin.debug:
-      msg: this course is {{course | default ('Ansible')}}
+      msg: "this course is {{course | default ('Ansible')}}"
 
 - name: upper case
   hosts: localhost
@@ -11,5 +11,5 @@
     NAME: sivakumar
   tasks:
   - name: print upper case
-    ansible.builting.debug:
+    ansible.builtin.debug:
       msg: "{{NMAE | upper}}"
