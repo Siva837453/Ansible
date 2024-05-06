@@ -44,7 +44,7 @@
 - name: convert dictionary to items
   hosts: localhost
   vars:
-    my_dict:
+    my_dict:   #this is called dictionary or map or key value pair
       course: devops
       trainer: siva
       duration: 100
@@ -53,3 +53,15 @@
     ansible.builtin.debug:
       msg: converted dictionary to items {{ my_dict | dict2items }}
 
+- name: convert items to dictionary
+  hosts: localhost
+  vars:
+    my_list:   #this is called list
+    - {'key': 'course', 'value': 'devops'}
+    - {'key': 'trainer', 'value': 'siva'}
+    - {'key': 'duration', 'value': 100}
+
+  tasks:
+  - name: dictionary to items
+    ansible.builtin.debug:
+      msg: converted dictionary to items {{ my_list | items2dict }}
