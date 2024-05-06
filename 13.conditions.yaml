@@ -1,4 +1,4 @@
-- name: funtions
+- name: conditions
   hosts: localhost
   vars_prompt:   # in ansible prompt  is always consider as test\ string
   - name: NUMBER
