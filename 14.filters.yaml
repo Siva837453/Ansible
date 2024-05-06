@@ -3,4 +3,13 @@
   tasks:
   - name: print default value
     ansible.builtin.debug:
-      msg: this course is {{course}}
+      msg: this course is {{course | default ('Ansible')}}
+
+- name: upper case
+  hosts: localhost
+  vars:
+    NAME: sivakumar
+  tasks:
+  - name: print upper case
+    ansible.builting.debug:
+      msg: {{NMAE | upper}}
