@@ -12,4 +12,4 @@
   tasks:
   - name: print upper case
     ansible.builting.debug:
-      msg: {{NMAE | upper}}
+      msg: "{{NMAE | upper}}"
