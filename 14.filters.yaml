@@ -22,3 +22,12 @@
   - name: print lower case
     ansible.builtin.debug:
       msg: "{{NAME | lower}}"
+
+- name: minium and maximum age
+  hosts: localhost
+  vars:
+    AGE: [12,52,6,67,89]
+  tasks:
+  - name: print min and max age
+    ansible.builtin.debug:
+      msg: "{{ AGE | min  AGE | max }}"
