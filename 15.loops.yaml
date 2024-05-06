@@ -3,7 +3,7 @@
   tasks:
   - name: print list of items
     ansible.builtin.debug:
-      msg: "{{item}}"
+      msg: Hellow {{item}}
 
     loop:
     - mysql
