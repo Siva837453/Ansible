@@ -38,4 +38,4 @@
   tasks:
   - name: print duplicate numbers
     ansible.builtin.debug:
-      msg: dupilicates values are removed {{NUMBERS}}
+      msg: dupilicates values are removed {{NUMBERS | unique}}
