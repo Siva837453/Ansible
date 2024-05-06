@@ -34,6 +34,7 @@
 
 - name: remove duplicates
   hosts: localhost
+  vars:
   NUMBERS: [1,2,2,3,3,4,5]
   tasks:
   - name: print duplicate numbers
