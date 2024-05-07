@@ -6,3 +6,7 @@
 
   - name: shell module
     ansible.builtin.shell: "echo 'Hi this is from shell module' > /tmp/shell.txt "
+
+
+# simple command without the need of shell variables, environments, and features like pipe and redirections, pipes and go for command command.
+# if you want run complex commands u can use shell module.
